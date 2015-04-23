@@ -1,6 +1,6 @@
-name: eb-deploy
-version: 0.0.8
-description: Deploy a zipped app to AWS ElasticBeanstalk
+name: eb-deploy-s3
+version: 0.0.1
+description: Deploy an application that already exists as an S3 archive.
 keywords:
   - Koding
   - ElasicBeanstalk
