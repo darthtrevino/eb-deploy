@@ -1,5 +1,5 @@
 name: eb-deploy-s3
-version: 0.0.1
+version: 0.0.2
 description: Deploy an application that already exists as an S3 archive.
 keywords:
   - Koding
