@@ -68,7 +68,7 @@ aws elasticbeanstalk create-application-version \
     --application-name $WERCKER_EB_DEPLOY_S3_APP_NAME \
     --version-label $WERCKER_EB_DEPLOY_S3_VERSION_LABEL \
     --description $EB_DESCRIPTION \
-    --source-bundle "{\"S3Bucket\":\"$WERCKER_EB_DEPLOY_S3_S3_BUCKET\", \"S3Key\":\"$WERCKER_EB_DEPLOY_S3_S3_KEY\"}"
+    --source-bundle "{\"S3Bucket\":\"$WERCKER_EB_DEPLOY_S3_S3_BUCKET\", \"S3Key\":\"$WERCKER_EB_DEPLOY_S3_S3_KEY\"}" || echo "could not create application version"
 
 info 'Updating EB Environment'
 aws elasticbeanstalk update-environment \
